@@ -1,10 +1,10 @@
 import express from 'express';
-import mongoose  from 'mongoose';
+import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 dotenv.config()
 
-mongoose.connect(process.env.MONGODB).then(() => {
+mongoose.connect(process.env.MONGODB_URL).then(() => {
     console.log("mongoDB is successfully connected")
 }).catch((error)=>{
     console.log(error)
