@@ -12,11 +12,8 @@ mongoose.connect(process.env.MONGODB_URL).then(() => {
     console.log(error)
 });
 
-
 const app = express();
 app.use(express.json());
-
-
 
 const PORT = 3000
 app.listen(PORT, () => {
