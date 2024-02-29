@@ -1,7 +1,7 @@
 import express from "express";
-import {test} from "../controllers/user.controller.js"
+import { test } from "../controllers/user.controller.js";
 
 const userRouter = express.Router();
-userRouter.get('/', test)
+userRouter.get("/", test);
 
-export default userRouter
+export default userRouter;
