@@ -53,7 +53,7 @@ export const signIn = async (req, res, next) => {
             process.env.JWT_SECRET_KEY
         );
 
-        const {password: pass, ...rest } = validUser._doc
+        const { password: pass, ...rest } = validUser._doc;
 
         res.status(200)
             .cookie("access_token", token, { httpOnly: true })
